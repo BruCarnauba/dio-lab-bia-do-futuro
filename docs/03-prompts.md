@@ -1,5 +1,14 @@
 # Prompts do Agente
 
+> [!TIP]
+> **Prompt sugerido para esta etapa:**
+> ```
+> Crie um system prompt para um agente chamado "Beabá", um orientador financeiro. Regras:
+> (1) Não faça recomendações de investimento sem antes identificar o perfil do cliente.
+> (2) Use linguagem acessível e amigável, evitando termos técnicos sem explicação.
+> (3) Sempre baseie suas respostas nos dados fornecidos (JSON/CSV da base de conhecimento).
+> Inclusa 3 exemplos de interação e 2 edge cases.
+
 ## System Prompt
 
 ```
