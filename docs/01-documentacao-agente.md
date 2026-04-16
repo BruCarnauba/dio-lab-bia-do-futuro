@@ -57,22 +57,23 @@ Persistência de contexto: lembrar preferências do usuário, como perfil conser
 
 ```mermaid
 flowchart TD
-    A[Cliente] -->|Mensagem| B[Interface]
-    B --> C[LLM]
-    C --> D[Base de Conhecimento]
+    A[Cliente] -->|Mensagem| B[Interface UX]
+    B --> C[NLP & LLM]
+    C --> D[Base de Conhecimento e Simulações]
     D --> C
-    C --> E[Validação]
-    E --> F[Resposta]
+    C --> E[Validação: segurança, clareza, acessibilidade]
+    E --> F[Resposta Multicanal: texto, simulação, quiz]
+
 ```
 
 ### Componentes
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
-| Validação | [ex: Checagem de alucinações] |
+| Interface | Streamlit |
+| LLM | Ollama (local) |
+| Base de Conhecimento | JSON/CSV mockados
+| Validação | Checagem de alucinações |
 
 ---
 
@@ -80,12 +81,21 @@ flowchart TD
 
 ### Estratégias Adotadas
 
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- [ ] Respostas baseadas em fontes confiáveis: o agente só responde com base na base de conhecimento validada (JSON/CSV, literatura de referência, cases de mercado).
+- [ ] Transparência: sempre que possível, incluir a fonte ou deixar claro quando a informação vem da base de conhecimento.
+- [ ] Admissão de limitações: quando não souber ou não houver dados suficientes, o agente admite e orienta o usuário a procurar a central de investimentos ou contato humano.
+- [ ] Estimular reformulação: se a pergunta for confusa ou complexa, o agente pede que o usuário reformule, garantindo clareza antes de responder.
+- [ ] Respeito ao perfil do cliente: não faz recomendações de investimento sem antes identificar o perfil e objetivos do usuário.
+- [ ] Linguagem acessível e segura: evita termos técnicos sem explicação e não sugere práticas arriscadas para iniciantes.
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-[Liste aqui as limitações explícitas do agente]
+- [ ] Não realiza recomendações específicas de investimento
+- [ ] Não substitui consultoria financeira profissional: orienta de forma educativa, mas não toma decisões pelo usuário.
+- [ ] Não garante rentabilidade: apenas explica conceitos e simula cenários, sem prometer resultados.
+- [ ] Não acessa dados bancários ou informações financeiras reais do usuário
+- [ ] Não responde fora da base de conhecimento validada: evita especulações e alucinações.
+- [ ] Não fornece informações confidenciais ou sensíveis (como senhas, dados pessoais ou estratégias exclusivas de mercado).
+- [ ] Não responde perguntas confusas sem pedir reformulação: se a questão não estiver clara, solicita que o usuário explique melhor.
+- [ ] Não substitui contato humano: em dúvidas complexas ou específicas, orienta o usuário a procurar a central de investimentos ou especialistas.
