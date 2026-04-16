@@ -1,4 +1,4 @@
-# Prompts do Agente
+# Prompts do Agente Beabá
 
 > [!TIP]
 > **Prompt sugerido para esta etapa:**
