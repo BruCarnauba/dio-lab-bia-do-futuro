@@ -8,12 +8,14 @@
 ### 1. O Problema (30 seg)
 > Qual dor do cliente você resolve?
 
-Muitas pessoas que estão começando a investir têm pouco capital, pouca experiência e sentem insegurança diante da complexidade do mercado financeiro. Elas não sabem por onde começar, têm medo de perder dinheiro e carecem de orientação acessível e confiável.
+Muitas pessoas que estão começando a investir têm pouco capital, pouca experiência e sentem insegurança diante da complexidade do mercado financeiro.
+Elas não sabem por onde começar, têm medo de perder dinheiro e precisam de orientação acessível e confiável.
 
 ### 2. A Solução (1 min)
 > Como seu agente resolve esse problema?
 
-O Beabá é um agente financeiro inteligente que atua como educador e consultor para iniciantes. Ele utiliza dados do perfil do cliente, histórico de transações e produtos disponíveis para oferecer explicações simples, seguras e personalizadas. O foco não é recomendar investimentos, mas ensinar conceitos básicos e orientar os primeiros passos com clareza.
+O Beabá é um agente financeiro inteligente que atua como educador e consultor para iniciantes.
+Ele utiliza dados do perfil do cliente, histórico de transações e produtos disponíveis para oferecer explicações simples, seguras e personalizadas. O foco não é recomendar investimentos, mas ensinar conceitos básicos e orientar os primeiros passos com clareza.
 
 ### 3. Demonstração (1 min)
 > Mostre o agente funcionando (pode ser gravação de tela)
@@ -23,7 +25,8 @@ Na prática, o usuário acessa uma interface em Streamlit, digita sua dúvida e 
 ### 4. Diferencial e Impacto (30 seg)
 > Por que essa solução é inovadora e qual é o impacto dela na sociedade?
 
-O diferencial do Beabá é unir educação financeira personalizada com linguagem acessível, sem prometer rentabilidade ou substituir consultoria profissional. O impacto é social: democratizar o conhecimento sobre finanças, empoderando pessoas com baixo capital a começarem sua jornada de investimento com segurança e confiança.
+O diferencial do Beabá é unir educação financeira personalizada com linguagem acessível, sem prometer rentabilidade ou substituir consultoria profissional. 
+O impacto é social: democratizar o conhecimento sobre finanças, empoderando pessoas com baixo capital a começarem sua jornada de investimento com segurança e confiança.
 
 ---
 
