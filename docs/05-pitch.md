@@ -44,4 +44,4 @@ O impacto é social: democratizar o conhecimento sobre finanças, empoderando pe
 
 > Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
 
-[Link do vídeo]
+[[Link do vídeo](https://drive.google.com/file/d/1qI61BBlD8b69a6t1pXHH1d3cl5rQ1Suf/view?usp=sharing)]
