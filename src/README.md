@@ -1,13 +1,13 @@
-Passo a Passo de Execução do Projeto Beabá
+markdown
+# Passo a Passo de Execução do Projeto Beabá
+
 Este documento descreve as etapas necessárias para executar o projeto Beabá, incluindo tempo aproximado de cada fase.
 
-1. Preparação do Ambiente (10–15 minutos)
-Instalar Python 3.9 ou superior.
-
-Instalar dependências:
-
-bash
-pip install pandas requests streamlit
+## 1. Preparação do Ambiente (10–15 minutos)
+- Instalar **Python 3.9 ou superior**.  
+- Instalar dependências:  
+  ```bash
+  pip install pandas requests streamlit
 Garantir que o Ollama esteja rodando localmente na porta 11434.
 
 2. Organização dos Dados (5–10 minutos)
@@ -71,3 +71,9 @@ Tempo Total Estimado
 Preparação inicial: 20–30 minutos.
 
 Execução contínua: depende da interação do usuário.
+
+<img width="1263" height="961" alt="image" src="https://github.com/user-attachments/assets/8457c970-05fc-4cba-ad23-7d152a67c21e" />
+
+
+
+Deseja que eu te forneça também um **script Python** que automaticamente gera esse arquivo `README.md` no diretório atual?
