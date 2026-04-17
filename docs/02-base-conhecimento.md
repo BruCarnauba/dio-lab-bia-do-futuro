@@ -26,38 +26,14 @@ Não houveram alterações.
 
 Carregar os arquivos por código, como no exemplo abaixo:
 
-import pandas as pd
 import json
+import pandas as pd
 
-# Importando os arquivos da pasta "data"
-
-# 1. Histórico de atendimento (CSV)
-historico_atendimento = pd.read_csv("data/historico_atendimento.csv")
-
-# 2. Perfil do investidor (JSON)
-with open("data/perfil_investidor.json", "r", encoding="utf-8") as f:
-    perfil_investidor = json.load(f)
-
-# 3. Produtos financeiros (JSON)
-with open("data/produtos_financeiros.json", "r", encoding="utf-8") as f:
-    produtos_financeiros = json.load(f)
-
-# 4. Transações (CSV)
-transacoes = pd.read_csv("data/transacoes.csv")
-
-# Conferindo as primeiras linhas dos CSVs
-print("Histórico de Atendimento:")
-print(historico_atendimento.head())
-
-print("\nTransações:")
-print(transacoes.head())
-
-# Conferindo chaves dos JSONs
-print("\nPerfil do Investidor:")
-print(perfil_investidor.keys())
-
-print("\nProdutos Financeiros:")
-print(produtos_financeiros.keys())
+# ************ CARREGAR DADOS ************
+perfil = json.load(open('./data/perfil_investidor.json'))
+transacoes = pd.read_csv('./data/transacoes.csv')
+historico = pd.read_csv('./data/historico_atendimento.csv')
+produtos = json.load(open('./data/produtos_financeiros.json'))	
 
 
 ### Como os dados são usados no prompt?
